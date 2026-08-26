@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — SimpleScan PDF</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #003153;
+    --card: #124B7A;
+    --text: #FFFFFF;
+    --muted: #C4C8D0;
+    --divider: #2A6494;
+    --accent: #2196F3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: linear-gradient(180deg, #07385C 0%, #002A48 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: rgba(10, 70, 112, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+  }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  h2 { font-size: 20px; margin: 28px 0 10px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:hover { opacity: 0.85; }
+  hr { border: 0; border-top: 1px solid var(--divider); margin: 24px 0; }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--divider);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: rgba(255,255,255,0.06); font-weight: 700; }
+  blockquote {
+    margin: 12px 0;
+    padding: 8px 14px;
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1 id="politica-privacidad-simplescan-pdf">Política de privacidad de SimpleScan PDF</h1>
+<p>Fecha de entrada en vigor: 2026-08-08</p>
+<p>Este documento describe cómo la aplicación móvil <strong>SimpleScan PDF</strong> (en adelante, la &quot;Aplicación&quot;) trata los datos en relación con su uso en un dispositivo Android.</p>
+<h2 id="1-responsable">1. Responsable del tratamiento</h2>
+<p>El responsable del tratamiento de los datos personales en el sentido del RGPD es:</p>
+<p><strong>Przemysław Sobczyk</strong><br>
+ul. Przygraniczna 40, 41-203 Sosnowiec, Polska<br>
+NIP: 6443558164<br>
+REGON: 387900749</p>
+<p>Contacto: <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong></p>
+<h2 id="2-ambito">2. Ámbito y finalidad de la Aplicación</h2>
+<p>SimpleScan PDF es un gestor de documentos local que funciona en el dispositivo del usuario. Permite:</p>
+<ul>
+<li>examinar y organizar archivos PDF, Word, Excel, PowerPoint, TXT, CSV e imágenes JPG/PNG almacenados en el dispositivo,</li>
+<li>abrir y previsualizar dichos documentos,</li>
+<li>escanear documentos con la cámara (detección de bordes y exportación a PDF),</li>
+<li>realizar la edición básica de archivos PDF (compresión, fusión, división, rotación, adición de texto, contraseña, firma, conversiones).</li>
+</ul>
+<p>La Aplicación <strong>no requiere una cuenta de usuario</strong> y <strong>no envía el contenido de los documentos del usuario a ningún servidor</strong>.</p>
+<h2 id="3-que-datos">3. Qué datos se tratan</h2>
+<h3 id="31-documentos">3.1 Documentos y archivos del usuario</h3>
+<ul>
+<li>El contenido de los archivos permanece <strong>exclusivamente en el dispositivo</strong>.</li>
+<li>La Aplicación lee los archivos para mostrar su contenido y permitir las operaciones elegidas por el usuario (por ejemplo, exportación, compresión).</li>
+<li>La Aplicación <strong>no copia, no envía ni comparte</strong> el contenido de los archivos con terceros.</li>
+</ul>
+<h3 id="32-metadatos">3.2 Metadatos locales de los documentos (base de datos SQLite)</h3>
+<p>La Aplicación guarda localmente en una base de datos del dispositivo los siguientes metadatos, para proporcionar funciones de gestor:</p>
+<ul>
+<li>nombre del archivo, ruta e identificador URI,</li>
+<li>tipo de archivo, extensión, tipo MIME, tamaño en bytes,</li>
+<li>fecha de modificación, fecha de creación, fecha de última apertura,</li>
+<li>número de la última página visualizada (en PDF),</li>
+<li>marcas: &quot;favoritos&quot;, &quot;papelera&quot;,</li>
+<li>ajustes del usuario (tema, nombre mostrado, calidad de escaneo, fecha de instalación).</li>
+</ul>
+<p>La base de datos se encuentra en el directorio privado de la Aplicación y <strong>nunca se envía fuera del dispositivo</strong>. Puede eliminarse borrando los datos de la Aplicación o desinstalándola.</p>
+<h3 id="33-escaneo">3.3 Escaneo de documentos (Google ML Kit)</h3>
+<p>La función de escaneo utiliza la biblioteca <strong>Google ML Kit Document Scanner</strong>. La detección de bordes, el enderezado y el procesamiento de imágenes se realizan <strong>íntegramente en el dispositivo</strong> — las imágenes escaneadas no se envían a los servidores de Google ni a ningún otro.</p>
+<h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
+<p>La Aplicación utiliza <strong>Google Firebase Analytics</strong> para medir el uso y mejorar las funciones. Se envían los siguientes eventos:</p>
+<table>
+<thead>
+<tr>
+<th>Evento</th>
+<th>Cuándo</th>
+<th>Qué contiene</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app_open</code></td>
+<td>apertura de la Aplicación</td>
+<td>evento de sistema de Firebase</td>
+</tr>
+<tr>
+<td><code>document_opened</code></td>
+<td>apertura de un documento</td>
+<td>solo el tipo de archivo (por ejemplo, <code>pdf</code>, <code>docx</code>) — sin nombre, ruta ni contenido</td>
+</tr>
+<tr>
+<td><code>scan_completed</code></td>
+<td>finalización del escaneo de una carpeta</td>
+<td>número de archivos encontrados — sin sus nombres ni contenido</td>
+</tr>
+<tr>
+<td><code>premium_purchased</code></td>
+<td>compra Premium (actualmente inactiva)</td>
+<td>sin parámetros adicionales</td>
+</tr>
+</tbody>
+</table>
+<p>Junto con estos eventos, Firebase puede recopilar datos técnicos del dispositivo: modelo, versión de Android, versión de la Aplicación, idioma, ubicación aproximada basada en la IP (país/región), identificador pseudónimo de la instancia de la aplicación.</p>
+<p>La Aplicación <strong>no registra</strong> el contenido de los documentos, los nombres de archivo, las rutas, el texto introducido ni los datos de contacto.</p>
+<h3 id="35-firebase-crashlytics">3.5 Firebase Crashlytics</h3>
+<p>La Aplicación utiliza <strong>Firebase Crashlytics</strong> para notificar fallos. En el momento del fallo se envían:</p>
+<ul>
+<li>traza de la pila (stack trace) del error,</li>
+<li>modelo del dispositivo y versión del sistema,</li>
+<li>versión de la Aplicación,</li>
+<li>estado técnico (por ejemplo, si el dispositivo estaba en línea),</li>
+<li>identificador pseudónimo de instalación de Crashlytics.</li>
+</ul>
+<p>No se envían datos personales, contenido de documentos ni otros datos del usuario.</p>
+<h3 id="36-publicidad">3.6 Publicidad (Google Mobile Ads / AdMob)</h3>
+<p>La Aplicación muestra anuncios proporcionados por <strong>Google Mobile Ads (AdMob)</strong>:</p>
+<ul>
+<li><strong>Durante los primeros 90 días desde la instalación, los anuncios están completamente desactivados</strong> — de acuerdo con la configuración de la Aplicación (<code>AdConfig.freeDaysWithoutAds = 90</code>). En ese periodo no se envían solicitudes publicitarias.</li>
+<li>Después de 90 días la Aplicación puede mostrar:
+<ul>
+<li>un banner en la parte inferior de la pantalla de la lista de documentos,</li>
+<li>un anuncio a pantalla completa (intersticial) ocasional después de cerrar el quinto documento seguido.</li>
+</ul>
+</li>
+<li>Los anuncios <strong>nunca se muestran mientras se lee un documento</strong>.</li>
+</ul>
+<p>Google Mobile Ads puede recopilar:</p>
+<ul>
+<li>el Advertising ID del dispositivo (un identificador que el usuario puede restablecer en los ajustes de Android),</li>
+<li>dirección IP y ubicación aproximada (país/región),</li>
+<li>información sobre las interacciones con el anuncio (impresión, clic),</li>
+<li>datos técnicos del dispositivo.</li>
+</ul>
+<p>Más información sobre los datos recopilados por Google en el marco publicitario: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
+<h3 id="37-ump">3.7 Consentimiento publicitario en el EEE (UMP)</h3>
+<p>Para los usuarios en el Espacio Económico Europeo, el Reino Unido y Suiza, la Aplicación utiliza la <strong>Google User Messaging Platform (UMP)</strong> para recabar el consentimiento sobre la personalización de anuncios conforme al RGPD. El formulario de consentimiento aparece antes de la primera exhibición de un anuncio.</p>
+<p>El usuario puede cambiar o retirar sus decisiones sobre anuncios en cualquier momento en:</p>
+<p><strong>Ajustes → Opciones de privacidad de los anuncios</strong></p>
+<p>(la opción aparece únicamente para los usuarios de las regiones cubiertas por el RGPD).</p>
+<h2 id="4-permisos">4. Permisos del sistema Android</h2>
+<table>
+<thead>
+<tr>
+<th>Permiso</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MANAGE_EXTERNAL_STORAGE</code></td>
+<td>Permite buscar automáticamente documentos en las distintas carpetas de la memoria del dispositivo. La Aplicación <strong>solo lee</strong> los metadatos de los archivos para mostrarlos en la interfaz.</td>
+</tr>
+<tr>
+<td><code>CAMERA</code></td>
+<td>Escaneo de documentos con la cámara.</td>
+</tr>
+<tr>
+<td><code>INTERNET</code></td>
+<td>Firebase Analytics/Crashlytics y anuncios de AdMob (tras 90 días). La Aplicación <strong>no envía los archivos del usuario</strong> por internet.</td>
+</tr>
+</tbody>
+</table>
+<p>Todos los permisos pueden revocarse en los Ajustes del sistema Android. La denegación del permiso de archivos hará que la Aplicación solo muestre los documentos abiertos manualmente.</p>
+<h2 id="5-base-juridica">5. Base jurídica del tratamiento (RGPD)</h2>
+<ul>
+<li><strong>Ejecución de un contrato</strong> (art. 6, apdo. 1, letra b) RGPD) — provisión de las funciones de la Aplicación.</li>
+<li><strong>Interés legítimo</strong> (art. 6, apdo. 1, letra f) RGPD) — analítica agregada, diagnóstico de fallos y seguridad.</li>
+<li><strong>Consentimiento del usuario</strong> (art. 6, apdo. 1, letra a) RGPD) — anuncios personalizados en el EEE (recabado mediante UMP).</li>
+</ul>
+<h2 id="6-destinatarios">6. Destinatarios de los datos</h2>
+<p>Los datos técnicos descritos en la sección 3 pueden ser tratados por:</p>
+<ul>
+<li><strong>Google Ireland Limited</strong> (Firebase Analytics, Firebase Crashlytics, Google Mobile Ads) — como encargado del tratamiento.</li>
+</ul>
+<p>La Aplicación <strong>no vende</strong> datos personales y <strong>no comparte</strong> el contenido de los documentos con ningún tercero.</p>
+<h2 id="7-transferencia">7. Transferencia de datos fuera del EEE</h2>
+<p>Los proveedores de servicios (Google) pueden tratar datos en Estados Unidos u otros países fuera del EEE. Google declara la conformidad con el Data Privacy Framework UE–EE. UU. y aplica cláusulas contractuales tipo (SCC) como base para la transferencia.</p>
+<h2 id="8-conservacion">8. Periodo de conservación de los datos</h2>
+<ul>
+<li><strong>Metadatos y archivos locales</strong>: hasta su eliminación por el usuario o la desinstalación de la Aplicación.</li>
+<li><strong>Firebase Analytics</strong>: 14 meses por defecto (conforme a la configuración de Firebase).</li>
+<li><strong>Firebase Crashlytics</strong>: 90 días.</li>
+<li><strong>Advertising ID</strong>: conforme a las normas de Google (restablecido por el usuario en los ajustes de Android).</li>
+</ul>
+<h2 id="9-derechos">9. Derechos del usuario</h2>
+<p>En virtud del RGPD, todo usuario tiene derecho a:</p>
+<ul>
+<li>acceder a sus datos,</li>
+<li>rectificarlos,</li>
+<li>suprimirlos (&quot;derecho al olvido&quot;),</li>
+<li>limitar el tratamiento,</li>
+<li>la portabilidad de los datos,</li>
+<li>oponerse al tratamiento (incluida la elaboración de perfiles publicitarios),</li>
+<li>retirar el consentimiento en cualquier momento (esto no afecta a la licitud del tratamiento previo a la retirada),</li>
+<li>presentar una reclamación ante una autoridad de control (en Polonia: <strong>Prezes Urzędu Ochrony Danych Osobowych</strong>, ul. Stawki 2, 00-193 Warszawa; también puede dirigirse a la autoridad de control de su propio país de residencia).</li>
+</ul>
+<p><strong>Cómo ejercer sus derechos en la Aplicación:</strong></p>
+<ul>
+<li><strong>Borrar el historial local</strong>: Ajustes → Borrar historial.</li>
+<li><strong>Retirar el acceso a los archivos</strong>: Ajustes de Android → Aplicaciones → SimpleScan PDF → Permisos.</li>
+<li><strong>Cambiar el consentimiento publicitario</strong>: Ajustes → Opciones de privacidad de los anuncios (disponible en el EEE).</li>
+<li><strong>Restablecer el Advertising ID</strong>: Ajustes de Android → Privacidad → Anuncios.</li>
+<li><strong>Eliminar todos los datos</strong>: desinstalar la Aplicación o borrar sus datos en los Ajustes de Android.</li>
+</ul>
+<p>Para otras cuestiones relacionadas con los datos, escriba a <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong> — respondemos en un plazo de 30 días.</p>
+<h2 id="10-menores">10. Datos de menores</h2>
+<p>La Aplicación no está dirigida a menores de 13 años y no recopila conscientemente sus datos.</p>
+<h2 id="11-seguridad">11. Seguridad</h2>
+<ul>
+<li>La base de datos de metadatos locales se encuentra en el directorio privado de la Aplicación, inaccesible para otras aplicaciones.</li>
+<li>La comunicación con los servidores de Firebase y Google Mobile Ads se realiza mediante conexiones cifradas HTTPS.</li>
+<li>La Aplicación no registra ni almacena contraseñas.</li>
+</ul>
+<h2 id="12-cambios">12. Cambios en la Política</h2>
+<p>Todos los cambios sustanciales de esta Política se publicarán en esta página con la actualización de la fecha de entrada en vigor. Se recomienda su consulta periódica.</p>
+<h2 id="13-enlaces">13. Enlaces a las políticas de los proveedores</h2>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://policies.google.com/technologies/ads">Google Ads Policy</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+<li><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Play Data Safety</a></li>
+</ul>
+<hr />
+<p><strong>Contacto con el responsable</strong>: <a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></p>
+
+</main>
+<footer>SimpleScan PDF · <a href="/es/privacy">Privacidad</a> · <a href="/es/terms">Términos</a> · <a href="/es/privacy-info">FAQ</a></footer>
+</body>
+</html>

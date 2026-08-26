@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Конфіденційність — FAQ — SimpleScan PDF</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #003153;
+    --card: #124B7A;
+    --text: #FFFFFF;
+    --muted: #C4C8D0;
+    --divider: #2A6494;
+    --accent: #2196F3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: linear-gradient(180deg, #07385C 0%, #002A48 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: rgba(10, 70, 112, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+  }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  h2 { font-size: 20px; margin: 28px 0 10px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:hover { opacity: 0.85; }
+  hr { border: 0; border-top: 1px solid var(--divider); margin: 24px 0; }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--divider);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: rgba(255,255,255,0.06); font-weight: 700; }
+  blockquote {
+    margin: 12px 0;
+    padding: 8px 14px;
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1 id="konfidenc-faq">Ваша конфіденційність у SimpleScan PDF — найчастіші запитання</h1>
+<p>Дата оновлення: 2026-08-08</p>
+<p>Ця сторінка відповідає на найчастіші запитання щодо даних та конфіденційності у SimpleScan PDF. Повну юридичну інформацію знайдете в <a href="/uk/privacy">Політиці конфіденційності</a>.</p>
+<h2 id="dokumenty-server">Чи мої документи надсилаються на сервер?</h2>
+<p><strong>Ні.</strong> Усі файли PDF, Word, Excel, PowerPoint, TXT та зображення, які ви переглядаєте або обробляєте у Застосунку, <strong>залишаються виключно на вашому пристрої</strong>. Застосунок не копіює, не надсилає і не передає їхній вміст жодним серверам — ані нашим, ані третіх сторін.</p>
+<h2 id="oblik-vhid">Чи потребує Застосунок облікового запису чи входу?</h2>
+<p><strong>Ні.</strong> SimpleScan PDF працює без облікового запису. Немає входу, немає реєстрації, немає синхронізації з хмарою.</p>
+<h2 id="skanuvannya-google">Чи сканування камерою надсилає фото до Google?</h2>
+<p><strong>Ні.</strong> Сканування використовує бібліотеку <strong>Google ML Kit Document Scanner</strong>, але вся обробка (розпізнавання країв, вирівнювання перспективи, кадрування) відбувається <strong>повністю на вашому пристрої</strong> — офлайн. Зображення сканувань не залишають телефон.</p>
+<h2 id="scho-zbyrayete">Що саме ви збираєте?</h2>
+<p>Застосунок використовує <strong>Firebase Analytics</strong> та <strong>Firebase Crashlytics</strong>, які збирають:</p>
+<ul>
+<li>базові події використання (відкриття застосунку, відкриття документа — лише тип файлу, наприклад «pdf», без назви чи вмісту),</li>
+<li>кількість знайдених документів під час сканування папок (лише кількість, а не назви),</li>
+<li>технічні дані пристрою (модель, версія Android, версія Застосунку),</li>
+<li>звіти про збої (stack trace, коли Застосунок зависне).</li>
+</ul>
+<p><strong>Ми не збираємо:</strong> назви файлів, шляхи, вміст документів, контакти, GPS-локацію, історію браузера.</p>
+<h2 id="reklama-pokazuye">Чи Застосунок показує рекламу?</h2>
+<p><strong>Протягом перших 90 днів після встановлення — ні.</strong> У цей період жодні рекламні запити не надсилаються.</p>
+<p>Після 90 днів можуть з'явитися:</p>
+<ul>
+<li>банер у нижній частині екрана списку документів,</li>
+<li>повноекранна реклама після закриття п'ятого поспіль документа.</li>
+</ul>
+<p>Реклама <strong>ніколи не з'являється під час читання документа</strong>.</p>
+<h2 id="vymknuty-personalizovanu">Як вимкнути персоналізовану рекламу?</h2>
+<p>Якщо ви перебуваєте в Європейському економічному просторі, під час першого показу реклами Застосунок попросить вас про згоду через форму <strong>Google UMP</strong>. Ви можете відмовити — тоді реклама показуватиметься без персоналізації.</p>
+<p>Щоб змінити рішення пізніше:</p>
+<p><strong>Налаштування → Опції конфіденційності реклами</strong></p>
+<p>(опція з'являється лише для користувачів із регіонів, де вимагається згода).</p>
+<h2 id="skynuty-advertising-id">Як скинути мій Advertising ID?</h2>
+<p><strong>Налаштування Android → Конфіденційність → Реклама → Скинути ідентифікатор реклами</strong></p>
+<p>Тут же можна повністю вимкнути персоналізацію реклами.</p>
+<h2 id="vydalyty-dani">Як видалити всі мої дані із Застосунку?</h2>
+<p>Три способи:</p>
+<ol>
+<li><strong>Очистити локальну історію</strong>: Налаштування у Застосунку → <strong>Очистити історію</strong>.</li>
+<li><strong>Очистити дані Застосунку</strong>: Налаштування Android → Застосунки → SimpleScan PDF → <strong>Пам'ять → Очистити дані</strong>.</li>
+<li><strong>Деінсталювати Застосунок</strong>: видаляє всі локальні метадані та налаштування.</li>
+</ol>
+<h2 id="dokumenty-vydaleno">Чи будуть мої документи видалені, якщо я очищу дані?</h2>
+<p><strong>Ваші оригінальні файли на пристрої (наприклад, у папці Download) НЕ буде видалено.</strong> Застосунок зберігає лише метадані (назви, шляхи, налаштування) у своїй базі — саме їх буде очищено. Файли залишаються.</p>
+<p>Виняток — документи, створені безпосередньо у Застосунку (сканування, редаговані PDF) — вони потрапляють до системної папки <code>Documents/SimpleScan PDF/</code> і залишаються там, доки ви самі їх не видалите.</p>
+<h2 id="shyfruvannya">Чи мої файли зашифровано?</h2>
+<p>База локальних метаданих знаходиться у приватному каталозі Застосунку, недоступному для інших застосунків на вашому пристрої (ізоляція пісочниці Android).</p>
+<p>Сам Застосунок не шифрує вміст файлів PDF, але пропонує інструмент <strong>«Захистити PDF паролем»</strong> (Інструменти → Захистити PDF), який дозволяє накласти AES-пароль на обраний файл.</p>
+<h2 id="bezpeka-diti">Чи Застосунок безпечний для дітей?</h2>
+<p>Застосунок не орієнтований на дітей віком до 13 років і свідомо не збирає від них жодних даних.</p>
+<h2 id="dostup-fajly">Чому Застосунок просить про доступ до всіх файлів?</h2>
+<p>Щоб мати змогу автоматично знайти й показати всі ваші документи PDF/Word/Excel/TXT, які знаходяться у різних папках пристрою. Без цього дозволу ви побачите лише ті документи, які відкриєте вручну.</p>
+<p><strong>Застосунок лише читає</strong> метадані цих файлів для відображення у списку — не копіює, не змінює і не надсилає їхній вміст.</p>
+<p>Ви можете відмовити у цьому дозволі або скасувати його у Налаштуваннях Android — Застосунок продовжуватиме працювати, просто з обмеженим переглядом файлів.</p>
+<h2 id="kontakt-konfidenc">Як зв'язатися у питаннях конфіденційності?</h2>
+<p>Пишіть на <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong> — ми відповідаємо протягом 30 днів.</p>
+<p>Ви також можете подати скаргу до наглядового органу:</p>
+<p><strong>Prezes Urzędu Ochrony Danych Osobowych</strong>
+ul. Stawki 2
+00-193 Warszawa
+<a href="https://uodo.gov.pl">uodo.gov.pl</a></p>
+<p>Ви також можете звернутися до наглядового органу країни свого проживання.</p>
+
+</main>
+<footer>SimpleScan PDF · <a href="/uk/privacy">Конфіденційність</a> · <a href="/uk/terms">Умови</a> · <a href="/uk/privacy-info">FAQ</a></footer>
+</body>
+</html>

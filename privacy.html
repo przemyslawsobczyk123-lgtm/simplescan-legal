@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Polityka prywatności — SimpleScan PDF</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #003153;
+    --card: #124B7A;
+    --text: #FFFFFF;
+    --muted: #C4C8D0;
+    --divider: #2A6494;
+    --accent: #2196F3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: linear-gradient(180deg, #07385C 0%, #002A48 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: rgba(10, 70, 112, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+  }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  h2 { font-size: 20px; margin: 28px 0 10px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:hover { opacity: 0.85; }
+  hr { border: 0; border-top: 1px solid var(--divider); margin: 24px 0; }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--divider);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: rgba(255,255,255,0.06); font-weight: 700; }
+  blockquote {
+    margin: 12px 0;
+    padding: 8px 14px;
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1 id="polityka-prywatnoci-simplescan-pdf">Polityka prywatności SimpleScan PDF</h1>
+<p>Data wejścia w życie: 2026-08-08</p>
+<p>Niniejszy dokument opisuje, w jaki sposób aplikacja mobilna <strong>SimpleScan PDF</strong> (dalej &quot;Aplikacja&quot;) przetwarza dane w związku z jej używaniem na urządzeniu z systemem Android.</p>
+<h2 id="1-administrator-danych">1. Administrator danych</h2>
+<p>Administratorem danych osobowych w rozumieniu RODO jest:</p>
+<p><strong>Przemysław Sobczyk</strong><br>
+ul. Przygraniczna 40, 41-203 Sosnowiec, Polska<br>
+NIP: 6443558164<br>
+REGON: 387900749</p>
+<p>Kontakt: <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong></p>
+<h2 id="2-zakres-i-cel-aplikacji">2. Zakres i cel Aplikacji</h2>
+<p>SimpleScan PDF to lokalny menedżer dokumentów działający na urządzeniu użytkownika. Umożliwia:</p>
+<ul>
+<li>przeglądanie i porządkowanie plików PDF, Word, Excel, PowerPoint, TXT, CSV, obrazów JPG/PNG znajdujących się na urządzeniu,</li>
+<li>otwieranie i podgląd tych dokumentów,</li>
+<li>skanowanie dokumentów aparatem (rozpoznawanie krawędzi i eksport do PDF),</li>
+<li>podstawową edycję plików PDF (kompresja, łączenie, podział, obrót, dodawanie tekstu, hasło, podpis, konwersje).</li>
+</ul>
+<p>Aplikacja <strong>nie wymaga konta użytkownika</strong> i <strong>nie wysyła treści dokumentów użytkownika na żaden serwer</strong>.</p>
+<h2 id="3-jakie-dane-s-przetwarzane">3. Jakie dane są przetwarzane</h2>
+<h3 id="31-dokumenty-i-pliki-uytkownika">3.1 Dokumenty i pliki użytkownika</h3>
+<ul>
+<li>Treść plików pozostaje <strong>wyłącznie na urządzeniu</strong>.</li>
+<li>Aplikacja odczytuje pliki, aby wyświetlić ich zawartość i umożliwić operacje wybrane przez użytkownika (np. eksport, kompresja).</li>
+<li>Aplikacja <strong>nie kopiuje, nie wysyła i nie udostępnia</strong> treści plików podmiotom trzecim.</li>
+</ul>
+<h3 id="32-lokalne-metadane-dokumentw-baza-sqlite">3.2 Lokalne metadane dokumentów (baza SQLite)</h3>
+<p>Aplikacja zapisuje lokalnie w bazie danych na urządzeniu następujące metadane, aby zapewnić funkcje menedżera:</p>
+<ul>
+<li>nazwa pliku, ścieżka i identyfikator URI,</li>
+<li>typ pliku, rozszerzenie, MIME type, rozmiar w bajtach,</li>
+<li>data modyfikacji, data utworzenia, data ostatniego otwarcia,</li>
+<li>numer ostatnio przeglądanej strony (dla PDF),</li>
+<li>oznaczenia: &quot;ulubione&quot;, &quot;kosz&quot;,</li>
+<li>ustawienia użytkownika (motyw, imię wyświetlane, jakość skanu, data instalacji).</li>
+</ul>
+<p>Baza znajduje się w prywatnym katalogu Aplikacji i <strong>nigdy nie jest wysyłana poza urządzenie</strong>. Można ją usunąć poprzez wyczyszczenie danych Aplikacji lub odinstalowanie.</p>
+<h3 id="33-skanowanie-dokumentw-google-ml-kit">3.3 Skanowanie dokumentów (Google ML Kit)</h3>
+<p>Funkcja skanowania używa biblioteki <strong>Google ML Kit Document Scanner</strong>. Rozpoznawanie krawędzi, prostowanie i przetwarzanie obrazu odbywa się <strong>w całości na urządzeniu</strong> — obrazy skanów nie są wysyłane na serwery Google ani żadne inne.</p>
+<h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
+<p>Aplikacja korzysta z <strong>Google Firebase Analytics</strong> do pomiaru użycia i ulepszania funkcji. Wysyłane są następujące zdarzenia:</p>
+<table>
+<thead>
+<tr>
+<th>Zdarzenie</th>
+<th>Kiedy</th>
+<th>Co zawiera</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app_open</code></td>
+<td>otwarcie Aplikacji</td>
+<td>zdarzenie systemowe Firebase</td>
+</tr>
+<tr>
+<td><code>document_opened</code></td>
+<td>otwarcie dokumentu</td>
+<td>tylko typ pliku (np. <code>pdf</code>, <code>docx</code>) — bez nazwy, ścieżki ani treści</td>
+</tr>
+<tr>
+<td><code>scan_completed</code></td>
+<td>zakończenie skanowania folderu</td>
+<td>liczba znalezionych plików — bez ich nazw ani zawartości</td>
+</tr>
+<tr>
+<td><code>premium_purchased</code></td>
+<td>zakup Premium (obecnie nieaktywne)</td>
+<td>brak dodatkowych parametrów</td>
+</tr>
+</tbody>
+</table>
+<p>Wraz z tymi zdarzeniami Firebase może zbierać techniczne dane urządzenia: model, wersję Androida, wersję Aplikacji, język, przybliżoną lokalizację na podstawie IP (kraj/region), pseudonimowy identyfikator instancji aplikacji.</p>
+<p>Aplikacja <strong>nie loguje</strong> treści dokumentów, nazw plików, ścieżek, wpisywanego tekstu ani danych kontaktowych.</p>
+<h3 id="35-firebase-crashlytics">3.5 Firebase Crashlytics</h3>
+<p>Aplikacja używa <strong>Firebase Crashlytics</strong> do raportowania awarii. W momencie awarii wysyłane są:</p>
+<ul>
+<li>ślad stosu (stack trace) błędu,</li>
+<li>model urządzenia i wersja systemu,</li>
+<li>wersja Aplikacji,</li>
+<li>stan techniczny (np. czy urządzenie było online),</li>
+<li>pseudonimowy identyfikator instalacji Crashlytics.</li>
+</ul>
+<p>Nie są wysyłane dane osobowe, treść dokumentów ani inne dane użytkownika.</p>
+<h3 id="36-reklamy-google-mobile-ads--admob">3.6 Reklamy (Google Mobile Ads / AdMob)</h3>
+<p>Aplikacja wyświetla reklamy dostarczane przez <strong>Google Mobile Ads (AdMob)</strong>:</p>
+<ul>
+<li><strong>Przez pierwsze 90 dni od instalacji reklamy są całkowicie wyłączone</strong> — zgodnie z konfiguracją Aplikacji (<code>AdConfig.freeDaysWithoutAds = 90</code>). W tym okresie żadne żądania reklamowe nie są wysyłane.</li>
+<li>Po 90 dniach Aplikacja może wyświetlić:
+<ul>
+<li>baner na dole ekranu listy dokumentów,</li>
+<li>okazjonalną reklamę pełnoekranową (interstitial) po zamknięciu piątego z rzędu dokumentu.</li>
+</ul>
+</li>
+<li>Reklamy <strong>nigdy nie są wyświetlane podczas czytania dokumentu</strong>.</li>
+</ul>
+<p>Google Mobile Ads może zbierać:</p>
+<ul>
+<li>Advertising ID urządzenia (identyfikator resetowalny przez użytkownika w Ustawieniach Androida),</li>
+<li>adres IP i przybliżoną lokalizację (kraj/region),</li>
+<li>informacje o interakcjach z reklamą (wyświetlenie, kliknięcie),</li>
+<li>techniczne dane urządzenia.</li>
+</ul>
+<p>Więcej informacji o danych zbieranych przez Google w ramach reklam: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
+<h3 id="37-zgoda-na-reklamy-w-eog-ump">3.7 Zgoda na reklamy w EOG (UMP)</h3>
+<p>Dla użytkowników w Europejskim Obszarze Gospodarczym, Wielkiej Brytanii i Szwajcarii Aplikacja używa <strong>Google User Messaging Platform (UMP)</strong> do zbierania zgody na personalizację reklam zgodnie z RODO. Formularz zgody pojawia się przed pierwszym wyświetleniem reklamy.</p>
+<p>Użytkownik może zmienić lub cofnąć swoje wybory dotyczące reklam w każdej chwili w:</p>
+<p><strong>Ustawienia → Opcje prywatności reklam</strong></p>
+<p>(opcja pojawia się tylko dla użytkowników z regionów objętych RODO).</p>
+<h2 id="4-uprawnienia-systemowe-androida">4. Uprawnienia systemowe Androida</h2>
+<table>
+<thead>
+<tr>
+<th>Uprawnienie</th>
+<th>Dlaczego</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MANAGE_EXTERNAL_STORAGE</code></td>
+<td>Umożliwia automatyczne wyszukanie dokumentów w różnych folderach pamięci urządzenia. Aplikacja <strong>tylko odczytuje</strong> metadane plików w celu ich wyświetlenia w interfejsie.</td>
+</tr>
+<tr>
+<td><code>CAMERA</code></td>
+<td>Skanowanie dokumentów aparatem.</td>
+</tr>
+<tr>
+<td><code>INTERNET</code></td>
+<td>Firebase Analytics/Crashlytics oraz reklamy AdMob (po 90 dniach). Aplikacja <strong>nie wysyła plików użytkownika</strong> przez internet.</td>
+</tr>
+</tbody>
+</table>
+<p>Wszystkie uprawnienia można cofnąć w Ustawieniach systemu Android. Odmowa uprawnienia do plików spowoduje, że Aplikacja pokaże tylko dokumenty otwarte ręcznie.</p>
+<h2 id="5-podstawa-prawna-przetwarzania-rodo">5. Podstawa prawna przetwarzania (RODO)</h2>
+<ul>
+<li><strong>Wykonanie umowy</strong> (art. 6 ust. 1 lit. b RODO) — dostarczenie funkcji Aplikacji.</li>
+<li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f RODO) — analityka zbiorcza, diagnostyka awarii i bezpieczeństwo.</li>
+<li><strong>Zgoda użytkownika</strong> (art. 6 ust. 1 lit. a RODO) — personalizowane reklamy w EOG (zbierana przez UMP).</li>
+</ul>
+<h2 id="6-odbiorcy-danych">6. Odbiorcy danych</h2>
+<p>Dane techniczne opisane w sekcji 3 mogą być przetwarzane przez:</p>
+<ul>
+<li><strong>Google Ireland Limited</strong> (Firebase Analytics, Firebase Crashlytics, Google Mobile Ads) — jako podmiot przetwarzający.</li>
+</ul>
+<p>Aplikacja <strong>nie sprzedaje</strong> danych osobowych i <strong>nie udostępnia</strong> treści dokumentów żadnym podmiotom trzecim.</p>
+<h2 id="7-transfer-danych-poza-eog">7. Transfer danych poza EOG</h2>
+<p>Dostawcy usług (Google) mogą przetwarzać dane w Stanach Zjednoczonych lub innych krajach spoza EOG. Google deklaruje zgodność z Data Privacy Framework UE–USA oraz stosuje standardowe klauzule umowne (SCC) jako podstawę transferu.</p>
+<h2 id="8-okres-przechowywania-danych">8. Okres przechowywania danych</h2>
+<ul>
+<li><strong>Lokalne metadane i pliki</strong>: do momentu ich usunięcia przez użytkownika lub odinstalowania Aplikacji.</li>
+<li><strong>Firebase Analytics</strong>: domyślnie 14 miesięcy (zgodnie z ustawieniami Firebase).</li>
+<li><strong>Firebase Crashlytics</strong>: 90 dni.</li>
+<li><strong>Advertising ID</strong>: zgodnie z zasadami Google (resetowany przez użytkownika w Ustawieniach Androida).</li>
+</ul>
+<h2 id="9-prawa-uytkownika">9. Prawa użytkownika</h2>
+<p>W związku z RODO każdemu użytkownikowi przysługuje prawo do:</p>
+<ul>
+<li>dostępu do swoich danych,</li>
+<li>sprostowania,</li>
+<li>usunięcia (&quot;prawo do bycia zapomnianym&quot;),</li>
+<li>ograniczenia przetwarzania,</li>
+<li>przenoszenia danych,</li>
+<li>sprzeciwu wobec przetwarzania (w tym profilowania reklamowego),</li>
+<li>cofnięcia zgody w dowolnym momencie (nie wpływa to na zgodność z prawem przetwarzania sprzed cofnięcia zgody),</li>
+<li>wniesienia skargi do organu nadzorczego (w Polsce: <strong>Prezes Urzędu Ochrony Danych Osobowych</strong>, ul. Stawki 2, 00-193 Warszawa).</li>
+</ul>
+<p><strong>Jak wykonać swoje prawa w Aplikacji:</strong></p>
+<ul>
+<li><strong>Usuń historię lokalną</strong>: Ustawienia → Wyczyść historię.</li>
+<li><strong>Cofnij dostęp do plików</strong>: Ustawienia Androida → Aplikacje → SimpleScan PDF → Uprawnienia.</li>
+<li><strong>Zmień zgodę reklamową</strong>: Ustawienia → Opcje prywatności reklam (dostępne w EOG).</li>
+<li><strong>Zresetuj Advertising ID</strong>: Ustawienia Androida → Prywatność → Reklamy.</li>
+<li><strong>Usuń wszystkie dane</strong>: odinstaluj Aplikację lub wyczyść dane w Ustawieniach Androida.</li>
+</ul>
+<p>W innych sprawach związanych z danymi napisz do <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong> — odpowiadamy w ciągu 30 dni.</p>
+<h2 id="10-dane-dzieci">10. Dane dzieci</h2>
+<p>Aplikacja nie jest kierowana do dzieci poniżej 13 roku życia i świadomie nie zbiera od nich danych.</p>
+<h2 id="11-bezpieczestwo">11. Bezpieczeństwo</h2>
+<ul>
+<li>Baza lokalnych metadanych znajduje się w prywatnym katalogu Aplikacji, niedostępnym dla innych aplikacji.</li>
+<li>Komunikacja z serwerami Firebase i Google Mobile Ads odbywa się przez połączenia szyfrowane HTTPS.</li>
+<li>Aplikacja nie loguje ani nie przechowuje haseł.</li>
+</ul>
+<h2 id="12-zmiany-polityki">12. Zmiany Polityki</h2>
+<p>Wszelkie istotne zmiany niniejszej Polityki będą publikowane na tej stronie z aktualizacją daty wejścia w życie. Zaleca się okresowe zapoznawanie się z jej treścią.</p>
+<h2 id="13-linki-do-polityk-dostawcw">13. Linki do polityk dostawców</h2>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://policies.google.com/technologies/ads">Google Ads Policy</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+<li><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Play Data Safety</a></li>
+</ul>
+<hr />
+<p><strong>Kontakt do administratora</strong>: <a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></p>
+
+</main>
+<footer>SimpleScan PDF · <a href="/privacy">Polityka</a> · <a href="/terms">Warunki</a> · <a href="/privacy-info">FAQ</a></footer>
+</body>
+</html>

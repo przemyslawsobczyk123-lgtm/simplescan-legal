@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Datenschutz — FAQ — SimpleScan PDF</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #003153;
+    --card: #124B7A;
+    --text: #FFFFFF;
+    --muted: #C4C8D0;
+    --divider: #2A6494;
+    --accent: #2196F3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: linear-gradient(180deg, #07385C 0%, #002A48 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: rgba(10, 70, 112, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+  }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  h2 { font-size: 20px; margin: 28px 0 10px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:hover { opacity: 0.85; }
+  hr { border: 0; border-top: 1px solid var(--divider); margin: 24px 0; }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--divider);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: rgba(255,255,255,0.06); font-weight: 700; }
+  blockquote {
+    margin: 12px 0;
+    padding: 8px 14px;
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1 id="datenschutz-faq">Ihre Privatsphäre in SimpleScan PDF — häufig gestellte Fragen</h1>
+<p>Datum der Aktualisierung: 2026-08-08</p>
+<p>Diese Seite beantwortet die häufigsten Fragen zu Daten und Datenschutz in SimpleScan PDF. Die vollständigen rechtlichen Informationen finden Sie in der <a href="/de/privacy">Datenschutzerklärung</a>.</p>
+<h2 id="dokumente-an-server">Werden meine Dokumente an einen Server gesendet?</h2>
+<p><strong>Nein.</strong> Alle PDF-, Word-, Excel-, PowerPoint-, TXT-Dateien und Bilder, die Sie in der Anwendung anzeigen oder verarbeiten, <strong>verbleiben ausschließlich auf Ihrem Gerät</strong>. Die Anwendung kopiert, sendet und teilt deren Inhalt nicht mit irgendwelchen Servern — weder mit unseren noch mit denen Dritter.</p>
+<h2 id="konto-erforderlich">Erfordert die Anwendung ein Konto oder eine Anmeldung?</h2>
+<p><strong>Nein.</strong> SimpleScan PDF funktioniert ohne Konto. Es gibt keine Anmeldung, keine Registrierung, keine Cloud-Synchronisierung.</p>
+<h2 id="scan-google">Sendet das Scannen mit der Kamera Fotos an Google?</h2>
+<p><strong>Nein.</strong> Das Scannen nutzt die Bibliothek <strong>Google ML Kit Document Scanner</strong>, doch die gesamte Verarbeitung (Kantenerkennung, Perspektivenkorrektur, Zuschneiden) erfolgt <strong>vollständig auf Ihrem Gerät</strong> — offline. Die Scanbilder verlassen das Telefon nicht.</p>
+<h2 id="was-wird-erfasst">Was genau erfassen Sie?</h2>
+<p>Die Anwendung nutzt <strong>Firebase Analytics</strong> und <strong>Firebase Crashlytics</strong>, die Folgendes erfassen:</p>
+<ul>
+<li>grundlegende Nutzungsereignisse (Öffnen der App, Öffnen eines Dokuments — nur der Dateityp, z. B. „pdf", ohne Name oder Inhalt),</li>
+<li>die Anzahl der beim Scannen von Ordnern gefundenen Dokumente (nur die Anzahl, keine Namen),</li>
+<li>technische Gerätedaten (Modell, Android-Version, Anwendungsversion),</li>
+<li>Absturzberichte (Stack Trace, wenn die Anwendung abstürzt).</li>
+</ul>
+<p><strong>Wir erfassen nicht:</strong> Dateinamen, Pfade, Dokumenteninhalte, Kontakte, GPS-Standort, Browserverlauf.</p>
+<h2 id="werbung-anzeigen">Zeigt die Anwendung Werbung an?</h2>
+<p><strong>In den ersten 90 Tagen nach der Installation — nein.</strong> In diesem Zeitraum werden keine Werbeanfragen gesendet.</p>
+<p>Nach 90 Tagen können erscheinen:</p>
+<ul>
+<li>ein Banner am unteren Rand des Dokumentenlisten-Bildschirms,</li>
+<li>eine Vollbildwerbung nach dem Schließen des fünften Dokuments in Folge.</li>
+</ul>
+<p>Werbung <strong>erscheint niemals während des Lesens eines Dokuments</strong>.</p>
+<h2 id="personalisierte-deaktivieren">Wie kann ich personalisierte Werbung deaktivieren?</h2>
+<p>Wenn Sie sich im Europäischen Wirtschaftsraum befinden, bittet die Anwendung Sie beim ersten Werbeeinblenden über das Formular <strong>Google UMP</strong> um Ihre Einwilligung. Sie können ablehnen — dann wird Werbung ohne Personalisierung angezeigt.</p>
+<p>Um die Entscheidung später zu ändern:</p>
+<p><strong>Einstellungen → Werbe-Datenschutzoptionen</strong></p>
+<p>(die Option erscheint nur für Nutzer aus Regionen, in denen eine Einwilligung erforderlich ist).</p>
+<h2 id="advertising-id-zuruecksetzen">Wie kann ich meine Advertising ID zurücksetzen?</h2>
+<p><strong>Android-Einstellungen → Datenschutz → Werbung → Werbe-ID zurücksetzen</strong></p>
+<p>Sie können die Werbepersonalisierung an derselben Stelle auch vollständig deaktivieren.</p>
+<h2 id="alle-daten-loeschen">Wie lösche ich alle meine Daten aus der Anwendung?</h2>
+<p>Drei Wege:</p>
+<ol>
+<li><strong>Lokalen Verlauf löschen</strong>: Einstellungen in der Anwendung → <strong>Verlauf löschen</strong>.</li>
+<li><strong>Anwendungsdaten löschen</strong>: Android-Einstellungen → Apps → SimpleScan PDF → <strong>Speicher → Daten löschen</strong>.</li>
+<li><strong>Anwendung deinstallieren</strong>: entfernt alle lokalen Metadaten und Einstellungen.</li>
+</ol>
+<h2 id="dokumente-geloescht">Werden meine Dokumente gelöscht, wenn ich die Daten lösche?</h2>
+<p><strong>Ihre Originaldateien auf dem Gerät (z. B. im Ordner Download) werden NICHT gelöscht.</strong> Die Anwendung speichert lediglich Metadaten (Namen, Pfade, Einstellungen) in ihrer Datenbank — diese werden gelöscht. Die Dateien bleiben erhalten.</p>
+<p>Eine Ausnahme sind Dokumente, die unmittelbar in der Anwendung erstellt wurden (Scans, bearbeitete PDFs) — diese werden im Systemordner <code>Documents/SimpleScan PDF/</code> abgelegt und verbleiben dort, bis Sie sie selbst löschen.</p>
+<h2 id="dateien-verschluesselt">Sind meine Dateien verschlüsselt?</h2>
+<p>Die lokale Metadaten-Datenbank befindet sich im privaten Verzeichnis der Anwendung, das für andere Apps auf Ihrem Gerät nicht zugänglich ist (Sandbox-Isolation von Android).</p>
+<p>Die Anwendung selbst verschlüsselt den Inhalt von PDF-Dateien nicht, bietet jedoch das Werkzeug <strong>„PDF mit Passwort schützen"</strong> (Werkzeuge → PDF schützen), mit dem Sie ein AES-Passwort auf eine ausgewählte Datei anwenden können.</p>
+<h2 id="sicher-fuer-kinder">Ist die Anwendung für Kinder sicher?</h2>
+<p>Die Anwendung richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
+<h2 id="warum-alle-dateien">Warum fragt die Anwendung nach Zugriff auf alle Dateien?</h2>
+<p>Damit sie alle Ihre PDF-/Word-/Excel-/TXT-Dokumente, die sich in verschiedenen Ordnern des Geräts befinden, automatisch finden und anzeigen kann. Ohne diese Berechtigung sehen Sie nur die Dokumente, die Sie manuell öffnen.</p>
+<p><strong>Die Anwendung liest lediglich</strong> die Metadaten dieser Dateien, um sie in der Liste anzuzeigen — sie kopiert, verändert oder sendet deren Inhalt nicht.</p>
+<p>Sie können diese Berechtigung ablehnen oder in den Android-Einstellungen entziehen — die Anwendung funktioniert weiterhin, jedoch mit eingeschränkter Dateiansicht.</p>
+<h2 id="kontakt-datenschutz">Wie kann ich mich in Datenschutzangelegenheiten in Verbindung setzen?</h2>
+<p>Schreiben Sie an <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong> — wir antworten innerhalb von 30 Tagen.</p>
+<p>Sie können auch eine Beschwerde bei einer Aufsichtsbehörde einreichen:</p>
+<p><strong>Prezes Urzędu Ochrony Danych Osobowych</strong>
+ul. Stawki 2
+00-193 Warszawa
+<a href="https://uodo.gov.pl">uodo.gov.pl</a></p>
+<p>Sie können sich ebenfalls an die Aufsichtsbehörde Ihres eigenen Wohnsitzlandes wenden.</p>
+
+</main>
+<footer>SimpleScan PDF · <a href="/de/privacy">Datenschutz</a> · <a href="/de/terms">Nutzungsbedingungen</a> · <a href="/de/privacy-info">FAQ</a></footer>
+</body>
+</html>

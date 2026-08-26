@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — SimpleScan PDF</title>
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #003153;
+    --card: #124B7A;
+    --text: #FFFFFF;
+    --muted: #C4C8D0;
+    --divider: #2A6494;
+    --accent: #2196F3;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 32px 16px 64px;
+    background: linear-gradient(180deg, #07385C 0%, #002A48 100%);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    -webkit-text-size-adjust: 100%;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    background: rgba(10, 70, 112, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+  }
+  h1 { font-size: 26px; margin: 0 0 12px; }
+  h2 { font-size: 20px; margin: 28px 0 10px; }
+  h3 { font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); }
+  ul, ol { padding-left: 22px; }
+  a { color: var(--accent); text-decoration: underline; }
+  a:hover { opacity: 0.85; }
+  hr { border: 0; border-top: 1px solid var(--divider); margin: 24px 0; }
+  code {
+    background: rgba(255,255,255,0.08);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid var(--divider);
+    padding: 8px 10px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: rgba(255,255,255,0.06); font-weight: 700; }
+  blockquote {
+    margin: 12px 0;
+    padding: 8px 14px;
+    background: var(--card);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    color: var(--muted);
+  }
+  footer {
+    max-width: 720px;
+    margin: 24px auto 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 12px;
+  }
+</style>
+</head>
+<body>
+<main>
+<h1 id="simplescan-pdf-privacy-policy">SimpleScan PDF Privacy Policy</h1>
+<p>Effective date: 2026-08-08</p>
+<p>This document describes how the mobile application <strong>SimpleScan PDF</strong> (hereinafter the &quot;Application&quot;) processes data in connection with its use on an Android device.</p>
+<h2 id="1-data-controller">1. Data controller</h2>
+<p>The controller of personal data within the meaning of the GDPR is:</p>
+<p><strong>Przemysław Sobczyk</strong><br>
+ul. Przygraniczna 40, 41-203 Sosnowiec, Polska<br>
+NIP: 6443558164<br>
+REGON: 387900749</p>
+<p>Contact: <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong></p>
+<h2 id="2-scope-and-purpose">2. Scope and purpose of the Application</h2>
+<p>SimpleScan PDF is a local document manager that runs on the user's device. It allows you to:</p>
+<ul>
+<li>browse and organise PDF, Word, Excel, PowerPoint, TXT, CSV files and JPG/PNG images stored on the device,</li>
+<li>open and preview those documents,</li>
+<li>scan documents with the camera (edge detection and export to PDF),</li>
+<li>perform basic editing of PDF files (compression, merging, splitting, rotation, adding text, password, signature, conversions).</li>
+</ul>
+<p>The Application <strong>does not require a user account</strong> and <strong>does not send the content of user documents to any server</strong>.</p>
+<h2 id="3-data-processed">3. What data is processed</h2>
+<h3 id="31-user-documents">3.1 User documents and files</h3>
+<ul>
+<li>File content remains <strong>exclusively on the device</strong>.</li>
+<li>The Application reads files in order to display their content and enable operations chosen by the user (e.g. export, compression).</li>
+<li>The Application <strong>does not copy, send, or share</strong> file contents with third parties.</li>
+</ul>
+<h3 id="32-local-metadata">3.2 Local document metadata (SQLite database)</h3>
+<p>The Application stores the following metadata locally in a database on the device, in order to provide manager features:</p>
+<ul>
+<li>file name, path, and URI identifier,</li>
+<li>file type, extension, MIME type, size in bytes,</li>
+<li>modification date, creation date, last opened date,</li>
+<li>last viewed page number (for PDF),</li>
+<li>flags: &quot;favourites&quot;, &quot;trash&quot;,</li>
+<li>user settings (theme, display name, scan quality, installation date).</li>
+</ul>
+<p>The database is located in the Application's private directory and <strong>is never sent outside the device</strong>. It can be removed by clearing the Application's data or by uninstalling.</p>
+<h3 id="33-scanning">3.3 Document scanning (Google ML Kit)</h3>
+<p>The scanning feature uses the <strong>Google ML Kit Document Scanner</strong> library. Edge detection, deskewing, and image processing take place <strong>entirely on the device</strong> — scan images are not sent to Google servers or any other servers.</p>
+<h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
+<p>The Application uses <strong>Google Firebase Analytics</strong> to measure usage and improve features. The following events are sent:</p>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>When</th>
+<th>What it contains</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>app_open</code></td>
+<td>opening the Application</td>
+<td>Firebase system event</td>
+</tr>
+<tr>
+<td><code>document_opened</code></td>
+<td>opening a document</td>
+<td>only file type (e.g. <code>pdf</code>, <code>docx</code>) — no name, path, or content</td>
+</tr>
+<tr>
+<td><code>scan_completed</code></td>
+<td>finishing a folder scan</td>
+<td>number of files found — no names or content</td>
+</tr>
+<tr>
+<td><code>premium_purchased</code></td>
+<td>Premium purchase (currently inactive)</td>
+<td>no additional parameters</td>
+</tr>
+</tbody>
+</table>
+<p>Along with these events, Firebase may collect technical device data: model, Android version, Application version, language, approximate location based on IP (country/region), pseudonymous app instance identifier.</p>
+<p>The Application <strong>does not log</strong> document contents, file names, paths, entered text, or contact details.</p>
+<h3 id="35-firebase-crashlytics">3.5 Firebase Crashlytics</h3>
+<p>The Application uses <strong>Firebase Crashlytics</strong> to report crashes. At the moment of a crash, the following are sent:</p>
+<ul>
+<li>error stack trace,</li>
+<li>device model and system version,</li>
+<li>Application version,</li>
+<li>technical state (e.g. whether the device was online),</li>
+<li>pseudonymous Crashlytics installation identifier.</li>
+</ul>
+<p>No personal data, document content, or other user data is sent.</p>
+<h3 id="36-ads">3.6 Ads (Google Mobile Ads / AdMob)</h3>
+<p>The Application displays ads provided by <strong>Google Mobile Ads (AdMob)</strong>:</p>
+<ul>
+<li><strong>For the first 90 days after installation, ads are completely disabled</strong> — in accordance with the Application configuration (<code>AdConfig.freeDaysWithoutAds = 90</code>). During that period, no ad requests are sent.</li>
+<li>After 90 days the Application may display:
+<ul>
+<li>a banner at the bottom of the documents list screen,</li>
+<li>an occasional full-screen (interstitial) ad after closing the fifth document in a row.</li>
+</ul>
+</li>
+<li>Ads are <strong>never displayed while reading a document</strong>.</li>
+</ul>
+<p>Google Mobile Ads may collect:</p>
+<ul>
+<li>the device Advertising ID (an identifier that can be reset by the user in Android Settings),</li>
+<li>IP address and approximate location (country/region),</li>
+<li>information about interactions with the ad (impression, click),</li>
+<li>technical device data.</li>
+</ul>
+<p>More information about data collected by Google in connection with ads: <a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a>.</p>
+<h3 id="37-ump">3.7 Ad consent in the EEA (UMP)</h3>
+<p>For users in the European Economic Area, the United Kingdom, and Switzerland, the Application uses the <strong>Google User Messaging Platform (UMP)</strong> to collect consent for ad personalisation in accordance with the GDPR. The consent form appears before the first ad is displayed.</p>
+<p>The user may change or withdraw their ad choices at any time in:</p>
+<p><strong>Settings → Ad privacy options</strong></p>
+<p>(the option is shown only to users in regions covered by the GDPR).</p>
+<h2 id="4-permissions">4. Android system permissions</h2>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Why</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MANAGE_EXTERNAL_STORAGE</code></td>
+<td>Enables automatic search for documents in various folders of the device storage. The Application <strong>only reads</strong> file metadata to display them in the interface.</td>
+</tr>
+<tr>
+<td><code>CAMERA</code></td>
+<td>Scanning documents with the camera.</td>
+</tr>
+<tr>
+<td><code>INTERNET</code></td>
+<td>Firebase Analytics/Crashlytics and AdMob ads (after 90 days). The Application <strong>does not send user files</strong> over the internet.</td>
+</tr>
+</tbody>
+</table>
+<p>All permissions can be revoked in the Android system Settings. Denying the file permission means the Application will only show documents opened manually.</p>
+<h2 id="5-legal-basis">5. Legal basis for processing (GDPR)</h2>
+<ul>
+<li><strong>Performance of a contract</strong> (Article 6(1)(b) GDPR) — providing the Application features.</li>
+<li><strong>Legitimate interest</strong> (Article 6(1)(f) GDPR) — aggregated analytics, crash diagnostics, and security.</li>
+<li><strong>User consent</strong> (Article 6(1)(a) GDPR) — personalised ads in the EEA (collected via UMP).</li>
+</ul>
+<h2 id="6-recipients">6. Data recipients</h2>
+<p>The technical data described in section 3 may be processed by:</p>
+<ul>
+<li><strong>Google Ireland Limited</strong> (Firebase Analytics, Firebase Crashlytics, Google Mobile Ads) — as a processor.</li>
+</ul>
+<p>The Application <strong>does not sell</strong> personal data and <strong>does not share</strong> document content with any third parties.</p>
+<h2 id="7-transfer">7. Data transfer outside the EEA</h2>
+<p>Service providers (Google) may process data in the United States or other countries outside the EEA. Google declares compliance with the EU–US Data Privacy Framework and uses Standard Contractual Clauses (SCC) as a basis for the transfer.</p>
+<h2 id="8-retention">8. Data retention period</h2>
+<ul>
+<li><strong>Local metadata and files</strong>: until removed by the user or the Application is uninstalled.</li>
+<li><strong>Firebase Analytics</strong>: 14 months by default (as per Firebase settings).</li>
+<li><strong>Firebase Crashlytics</strong>: 90 days.</li>
+<li><strong>Advertising ID</strong>: in accordance with Google policies (reset by the user in Android Settings).</li>
+</ul>
+<h2 id="9-rights">9. User rights</h2>
+<p>Under the GDPR, every user has the right to:</p>
+<ul>
+<li>access to their data,</li>
+<li>rectification,</li>
+<li>erasure (&quot;right to be forgotten&quot;),</li>
+<li>restriction of processing,</li>
+<li>data portability,</li>
+<li>object to processing (including advertising profiling),</li>
+<li>withdraw consent at any time (this does not affect the lawfulness of processing prior to withdrawal),</li>
+<li>lodge a complaint with a supervisory authority (in Poland: <strong>Prezes Urzędu Ochrony Danych Osobowych</strong>, ul. Stawki 2, 00-193 Warszawa; you may also contact the supervisory authority of your own country of residence).</li>
+</ul>
+<p><strong>How to exercise your rights in the Application:</strong></p>
+<ul>
+<li><strong>Clear local history</strong>: Settings → Clear history.</li>
+<li><strong>Revoke file access</strong>: Android Settings → Apps → SimpleScan PDF → Permissions.</li>
+<li><strong>Change ad consent</strong>: Settings → Ad privacy options (available in the EEA).</li>
+<li><strong>Reset Advertising ID</strong>: Android Settings → Privacy → Ads.</li>
+<li><strong>Delete all data</strong>: uninstall the Application or clear its data in Android Settings.</li>
+</ul>
+<p>For other data-related matters, please write to <strong><a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></strong> — we respond within 30 days.</p>
+<h2 id="10-children">10. Children's data</h2>
+<p>The Application is not directed at children under 13 years of age and does not knowingly collect data from them.</p>
+<h2 id="11-security">11. Security</h2>
+<ul>
+<li>The local metadata database is located in the Application's private directory, inaccessible to other applications.</li>
+<li>Communication with Firebase and Google Mobile Ads servers uses encrypted HTTPS connections.</li>
+<li>The Application does not log or store passwords.</li>
+</ul>
+<h2 id="12-changes">12. Changes to the Policy</h2>
+<p>All material changes to this Policy will be published on this page along with an updated effective date. Periodic review is recommended.</p>
+<h2 id="13-links">13. Links to provider policies</h2>
+<ul>
+<li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
+<li><a href="https://policies.google.com/technologies/ads">Google Ads Policy</a></li>
+<li><a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+<li><a href="https://support.google.com/googleplay/android-developer/answer/10787469">Play Data Safety</a></li>
+</ul>
+<hr />
+<p><strong>Contact the controller</strong>: <a href="mailto:przemyslawsobczyk123@gmail.com">przemyslawsobczyk123@gmail.com</a></p>
+
+</main>
+<footer>SimpleScan PDF · <a href="/en/privacy">Privacy</a> · <a href="/en/terms">Terms</a> · <a href="/en/privacy-info">FAQ</a></footer>
+</body>
+</html>
