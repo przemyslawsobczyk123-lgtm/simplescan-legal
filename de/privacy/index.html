@@ -115,8 +115,8 @@ REGON: 387900749</p>
 <li>Benutzereinstellungen (Design, angezeigter Name, Scanqualität, Installationsdatum).</li>
 </ul>
 <p>Die Datenbank befindet sich im privaten Verzeichnis der Anwendung und <strong>wird niemals außerhalb des Geräts übertragen</strong>. Sie kann durch Löschen der Anwendungsdaten oder Deinstallation entfernt werden.</p>
-<h3 id="33-scan">3.3 Dokumentenscan (Google ML Kit)</h3>
-<p>Die Scanfunktion nutzt die Bibliothek <strong>Google ML Kit Document Scanner</strong>. Kantenerkennung, Entzerrung und Bildverarbeitung erfolgen <strong>vollständig auf dem Gerät</strong> — Scanbilder werden weder an Google-Server noch an andere gesendet.</p>
+<h3 id="33-scan">3.3 Dokumentenscan (lokal, OpenCV)</h3>
+<p>Das Scannen basiert auf der Gerätekamera (Android CameraX) und der in der Anwendung enthaltenen Bibliothek <strong>OpenCV</strong>. Kantenerkennung, Perspektivkorrektur und Bildverarbeitung erfolgen <strong>vollständig auf dem Gerät, ohne Internetverbindung</strong> — Scanbilder werden weder an Google-Server noch an andere gesendet. <strong>Google ML Kit</strong> wird ausschließlich zum Lesen von QR-Codes verwendet und läuft ebenfalls lokal.</p>
 <h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
 <p>Die Anwendung nutzt <strong>Google Firebase Analytics</strong> zur Messung der Nutzung und Verbesserung von Funktionen. Folgende Ereignisse werden gesendet:</p>
 <table>
@@ -165,8 +165,8 @@ REGON: 387900749</p>
 <h3 id="36-werbung">3.6 Werbung (Google Mobile Ads / AdMob)</h3>
 <p>Die Anwendung zeigt Werbung an, die von <strong>Google Mobile Ads (AdMob)</strong> bereitgestellt wird:</p>
 <ul>
-<li><strong>In den ersten 90 Tagen nach der Installation ist die Werbung vollständig deaktiviert</strong> — gemäß der Anwendungskonfiguration (<code>AdConfig.freeDaysWithoutAds = 90</code>). In diesem Zeitraum werden keine Werbeanfragen gesendet.</li>
-<li>Nach 90 Tagen kann die Anwendung anzeigen:
+<li><strong>In den ersten ab der Installation ist die Werbung vollständig deaktiviert</strong> — gemäß der Anwendungskonfiguration (<code>AdConfig.freeDaysWithoutAds = 90</code>). In diesem Zeitraum werden keine Werbeanfragen gesendet.</li>
+<li>Ab der Installation kann die Anwendung anzeigen:
 <ul>
 <li>ein Banner am unteren Rand des Dokumentenlisten-Bildschirms,</li>
 <li>gelegentlich eine Vollbild-Werbung (Interstitial) nach dem Schließen des fünften Dokuments in Folge.</li>
@@ -206,7 +206,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>INTERNET</code></td>
-<td>Firebase Analytics/Crashlytics sowie AdMob-Werbung (nach 90 Tagen). Die Anwendung <strong>sendet keine Nutzerdateien</strong> über das Internet.</td>
+<td>Firebase Analytics/Crashlytics sowie AdMob-Werbung (ab der Installation). Die Anwendung <strong>sendet keine Nutzerdateien</strong> über das Internet.</td>
 </tr>
 </tbody>
 </table>

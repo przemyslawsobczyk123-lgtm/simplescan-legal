@@ -86,7 +86,7 @@
 <h2 id="compte-connexion">L'Application exige-t-elle un compte ou une connexion ?</h2>
 <p><strong>Non.</strong> SimpleScan PDF fonctionne sans compte. Pas de connexion, pas d'inscription, pas de synchronisation avec le cloud.</p>
 <h2 id="scan-google">La numérisation avec l'appareil photo envoie-t-elle les photos à Google ?</h2>
-<p><strong>Non.</strong> La numérisation utilise la bibliothèque <strong>Google ML Kit Document Scanner</strong>, mais l'ensemble du traitement (détection des bords, correction de perspective, recadrage) s'effectue <strong>entièrement sur votre appareil</strong> — hors ligne. Les images numérisées ne quittent pas le téléphone.</p>
+<p><strong>Non.</strong> La numérisation utilise l'appareil photo et la bibliothèque intégrée <strong>OpenCV</strong> (aucun service cloud), et l'ensemble du traitement (détection des bords, correction de perspective, recadrage) s'effectue <strong>entièrement sur votre appareil</strong> — hors ligne. Les images numérisées ne quittent pas le téléphone.</p>
 <h2 id="que-collectez-vous">Que collectez-vous exactement ?</h2>
 <p>L'Application utilise <strong>Firebase Analytics</strong> et <strong>Firebase Crashlytics</strong>, qui collectent :</p>
 <ul>
@@ -98,7 +98,7 @@
 <p><strong>Nous ne collectons pas :</strong> les noms de fichiers, les chemins, le contenu des documents, les contacts, la localisation GPS, l'historique du navigateur.</p>
 <h2 id="publicites-affichees">L'Application affiche-t-elle des publicités ?</h2>
 <p><strong>Pendant les 90 premiers jours après l'installation — non.</strong> Durant cette période, aucune requête publicitaire n'est envoyée.</p>
-<p>Après 90 jours, peuvent apparaître :</p>
+<p>Dès l'installation, peuvent apparaître :</p>
 <ul>
 <li>une bannière en bas de l'écran de la liste des documents,</li>
 <li>une publicité plein écran après la fermeture du cinquième document consécutif.</li>

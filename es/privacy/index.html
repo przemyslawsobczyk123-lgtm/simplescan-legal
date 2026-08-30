@@ -115,8 +115,8 @@ REGON: 387900749</p>
 <li>ajustes del usuario (tema, nombre mostrado, calidad de escaneo, fecha de instalación).</li>
 </ul>
 <p>La base de datos se encuentra en el directorio privado de la Aplicación y <strong>nunca se envía fuera del dispositivo</strong>. Puede eliminarse borrando los datos de la Aplicación o desinstalándola.</p>
-<h3 id="33-escaneo">3.3 Escaneo de documentos (Google ML Kit)</h3>
-<p>La función de escaneo utiliza la biblioteca <strong>Google ML Kit Document Scanner</strong>. La detección de bordes, el enderezado y el procesamiento de imágenes se realizan <strong>íntegramente en el dispositivo</strong> — las imágenes escaneadas no se envían a los servidores de Google ni a ningún otro.</p>
+<h3 id="33-escaneo">3.3 Escaneo de documentos (local, OpenCV)</h3>
+<p>El escaneo se basa en la cámara del dispositivo (Android CameraX) y en la biblioteca <strong>OpenCV</strong> incluida en la Aplicación. La detección de bordes, la corrección de perspectiva y el procesamiento de imágenes se realizan <strong>íntegramente en el dispositivo, sin conexión a internet</strong> — las imágenes escaneadas no se envían a los servidores de Google ni a ningún otro. <strong>Google ML Kit</strong> se utiliza únicamente para leer códigos QR y también funciona localmente.</p>
 <h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
 <p>La Aplicación utiliza <strong>Google Firebase Analytics</strong> para medir el uso y mejorar las funciones. Se envían los siguientes eventos:</p>
 <table>
@@ -145,7 +145,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>premium_purchased</code></td>
-<td>compra Premium (actualmente inactiva)</td>
+<td>compra de la suscripción PRO</td>
 <td>sin parámetros adicionales</td>
 </tr>
 </tbody>
@@ -165,8 +165,8 @@ REGON: 387900749</p>
 <h3 id="36-publicidad">3.6 Publicidad (Google Mobile Ads / AdMob)</h3>
 <p>La Aplicación muestra anuncios proporcionados por <strong>Google Mobile Ads (AdMob)</strong>:</p>
 <ul>
-<li><strong>Durante los primeros 90 días desde la instalación, los anuncios están completamente desactivados</strong> — de acuerdo con la configuración de la Aplicación (<code>AdConfig.freeDaysWithoutAds = 90</code>). En ese periodo no se envían solicitudes publicitarias.</li>
-<li>Después de 90 días la Aplicación puede mostrar:
+<li>Los anuncios pueden mostrarse desde el momento de la instalación de la Aplicación.</li>
+<li>Desde la instalación la Aplicación puede mostrar:
 <ul>
 <li>un banner en la parte inferior de la pantalla de la lista de documentos,</li>
 <li>un anuncio a pantalla completa (intersticial) ocasional después de cerrar el quinto documento seguido.</li>

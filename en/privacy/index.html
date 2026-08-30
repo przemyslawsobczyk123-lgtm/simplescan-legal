@@ -115,8 +115,8 @@ REGON: 387900749</p>
 <li>user settings (theme, display name, scan quality, installation date).</li>
 </ul>
 <p>The database is located in the Application's private directory and <strong>is never sent outside the device</strong>. It can be removed by clearing the Application's data or by uninstalling.</p>
-<h3 id="33-scanning">3.3 Document scanning (Google ML Kit)</h3>
-<p>The scanning feature uses the <strong>Google ML Kit Document Scanner</strong> library. Edge detection, deskewing, and image processing take place <strong>entirely on the device</strong> — scan images are not sent to Google servers or any other servers.</p>
+<h3 id="33-scanning">3.3 Document scanning (on-device, OpenCV)</h3>
+<p>Scanning is built on the device camera (Android CameraX) and the <strong>OpenCV</strong> library bundled with the Application. Edge detection, perspective correction, and image processing take place <strong>entirely on the device, with no internet connection</strong> — scan images are not sent to Google servers or any other servers. <strong>Google ML Kit</strong> is used only for reading QR codes and also runs locally.</p>
 <h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
 <p>The Application uses <strong>Google Firebase Analytics</strong> to measure usage and improve features. The following events are sent:</p>
 <table>
@@ -145,7 +145,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>premium_purchased</code></td>
-<td>Premium purchase (currently inactive)</td>
+<td>PRO subscription purchase</td>
 <td>no additional parameters</td>
 </tr>
 </tbody>
@@ -165,8 +165,8 @@ REGON: 387900749</p>
 <h3 id="36-ads">3.6 Ads (Google Mobile Ads / AdMob)</h3>
 <p>The Application displays ads provided by <strong>Google Mobile Ads (AdMob)</strong>:</p>
 <ul>
-<li><strong>For the first 90 days after installation, ads are completely disabled</strong> — in accordance with the Application configuration (<code>AdConfig.freeDaysWithoutAds = 90</code>). During that period, no ad requests are sent.</li>
-<li>After 90 days the Application may display:
+<li>Ads may be shown from the moment the Application is installed.</li>
+<li>The Application may display:
 <ul>
 <li>a banner at the bottom of the documents list screen,</li>
 <li>an occasional full-screen (interstitial) ad after closing the fifth document in a row.</li>
@@ -206,7 +206,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>INTERNET</code></td>
-<td>Firebase Analytics/Crashlytics and AdMob ads (after 90 days). The Application <strong>does not send user files</strong> over the internet.</td>
+<td>Firebase Analytics/Crashlytics and AdMob ads. The Application <strong>does not send user files</strong> over the internet.</td>
 </tr>
 </tbody>
 </table>

@@ -86,7 +86,7 @@
 <h2 id="czy-aplikacja-wymaga-konta-lub-logowania">Czy Aplikacja wymaga konta lub logowania?</h2>
 <p><strong>Nie.</strong> SimpleScan PDF działa bez konta. Nie ma logowania, nie ma rejestracji, nie ma synchronizacji z chmurą.</p>
 <h2 id="czy-skanowanie-aparatem-wysya-zdjcia-do-google">Czy skanowanie aparatem wysyła zdjęcia do Google?</h2>
-<p><strong>Nie.</strong> Skanowanie używa biblioteki <strong>Google ML Kit Document Scanner</strong>, ale całe przetwarzanie (rozpoznawanie krawędzi, prostowanie perspektywy, kadrowanie) odbywa się <strong>w całości na Twoim urządzeniu</strong> — offline. Zdjęcia skanów nie opuszczają telefonu.</p>
+<p><strong>Nie.</strong> Skanowanie korzysta z aparatu urządzenia i wbudowanej biblioteki <strong>OpenCV</strong> (nie z usług chmurowych), a całe przetwarzanie (rozpoznawanie krawędzi, prostowanie perspektywy, kadrowanie) odbywa się <strong>w całości na Twoim urządzeniu</strong> — offline. Zdjęcia skanów nie opuszczają telefonu.</p>
 <h2 id="co-dokadnie-zbieracie">Co dokładnie zbieracie?</h2>
 <p>Aplikacja korzysta z <strong>Firebase Analytics</strong> i <strong>Firebase Crashlytics</strong>, które zbierają:</p>
 <ul>
@@ -97,8 +97,8 @@
 </ul>
 <p><strong>Nie zbieramy:</strong> nazw plików, ścieżek, treści dokumentów, kontaktów, lokalizacji GPS, historii przeglądarki.</p>
 <h2 id="czy-aplikacja-pokazuje-reklamy">Czy Aplikacja pokazuje reklamy?</h2>
-<p><strong>Przez pierwsze 90 dni od instalacji — nie.</strong> W tym okresie żadne żądania reklamowe nie są wysyłane.</p>
-<p>Po 90 dniach mogą pojawić się:</p>
+<p><strong>Tak, od momentu instalacji.</strong> Reklamy nigdy nie mają dostępu do treści Twoich dokumentów.</p>
+<p>Mogą pojawić się:</p>
 <ul>
 <li>baner na dole ekranu listy dokumentów,</li>
 <li>reklama pełnoekranowa po zamknięciu piątego z rzędu dokumentu.</li>

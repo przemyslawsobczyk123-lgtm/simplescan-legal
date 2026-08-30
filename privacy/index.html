@@ -115,8 +115,8 @@ REGON: 387900749</p>
 <li>ustawienia użytkownika (motyw, imię wyświetlane, jakość skanu, data instalacji).</li>
 </ul>
 <p>Baza znajduje się w prywatnym katalogu Aplikacji i <strong>nigdy nie jest wysyłana poza urządzenie</strong>. Można ją usunąć poprzez wyczyszczenie danych Aplikacji lub odinstalowanie.</p>
-<h3 id="33-skanowanie-dokumentw-google-ml-kit">3.3 Skanowanie dokumentów (Google ML Kit)</h3>
-<p>Funkcja skanowania używa biblioteki <strong>Google ML Kit Document Scanner</strong>. Rozpoznawanie krawędzi, prostowanie i przetwarzanie obrazu odbywa się <strong>w całości na urządzeniu</strong> — obrazy skanów nie są wysyłane na serwery Google ani żadne inne.</p>
+<h3 id="33-skanowanie-dokumentw-google-ml-kit">3.3 Skanowanie dokumentów (lokalnie, OpenCV)</h3>
+<p>Skanowanie opiera się na aparacie urządzenia (Android CameraX) oraz bibliotece <strong>OpenCV</strong> wbudowanej w Aplikację. Rozpoznawanie krawędzi, prostowanie perspektywy i przetwarzanie obrazu odbywa się <strong>w całości na urządzeniu, bez połączenia z internetem</strong> — obrazy skanów nie są wysyłane na serwery Google ani żadne inne. Biblioteka <strong>Google ML Kit</strong> jest wykorzystywana wyłącznie do odczytu kodów QR i również działa lokalnie.</p>
 <h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
 <p>Aplikacja korzysta z <strong>Google Firebase Analytics</strong> do pomiaru użycia i ulepszania funkcji. Wysyłane są następujące zdarzenia:</p>
 <table>
@@ -145,7 +145,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>premium_purchased</code></td>
-<td>zakup Premium (obecnie nieaktywne)</td>
+<td>zakup subskrypcji PRO</td>
 <td>brak dodatkowych parametrów</td>
 </tr>
 </tbody>
@@ -165,8 +165,8 @@ REGON: 387900749</p>
 <h3 id="36-reklamy-google-mobile-ads--admob">3.6 Reklamy (Google Mobile Ads / AdMob)</h3>
 <p>Aplikacja wyświetla reklamy dostarczane przez <strong>Google Mobile Ads (AdMob)</strong>:</p>
 <ul>
-<li><strong>Przez pierwsze 90 dni od instalacji reklamy są całkowicie wyłączone</strong> — zgodnie z konfiguracją Aplikacji (<code>AdConfig.freeDaysWithoutAds = 90</code>). W tym okresie żadne żądania reklamowe nie są wysyłane.</li>
-<li>Po 90 dniach Aplikacja może wyświetlić:
+<li>Reklamy mogą być wyświetlane od momentu instalacji Aplikacji.</li>
+<li>Aplikacja może wyświetlić:
 <ul>
 <li>baner na dole ekranu listy dokumentów,</li>
 <li>okazjonalną reklamę pełnoekranową (interstitial) po zamknięciu piątego z rzędu dokumentu.</li>
@@ -206,7 +206,7 @@ REGON: 387900749</p>
 </tr>
 <tr>
 <td><code>INTERNET</code></td>
-<td>Firebase Analytics/Crashlytics oraz reklamy AdMob (po 90 dniach). Aplikacja <strong>nie wysyła plików użytkownika</strong> przez internet.</td>
+<td>Firebase Analytics/Crashlytics oraz reklamy AdMob. Aplikacja <strong>nie wysyła plików użytkownika</strong> przez internet.</td>
 </tr>
 </tbody>
 </table>

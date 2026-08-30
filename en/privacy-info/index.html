@@ -86,7 +86,7 @@
 <h2 id="does-application-require-account">Does the Application require an account or login?</h2>
 <p><strong>No.</strong> SimpleScan PDF works without an account. There is no login, no registration, no cloud sync.</p>
 <h2 id="does-scanning-send-photos">Does camera scanning send photos to Google?</h2>
-<p><strong>No.</strong> Scanning uses the <strong>Google ML Kit Document Scanner</strong> library, but all processing (edge detection, perspective correction, cropping) takes place <strong>entirely on your device</strong> — offline. Scan images do not leave the phone.</p>
+<p><strong>No.</strong> Scanning uses the device camera and the bundled <strong>OpenCV</strong> library (not any cloud service), and all processing (edge detection, perspective correction, cropping) takes place <strong>entirely on your device</strong> — offline. Scan images do not leave the phone.</p>
 <h2 id="what-do-you-collect">What exactly do you collect?</h2>
 <p>The Application uses <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>, which collect:</p>
 <ul>
@@ -97,8 +97,8 @@
 </ul>
 <p><strong>We do not collect:</strong> file names, paths, document contents, contacts, GPS location, browser history.</p>
 <h2 id="does-application-show-ads">Does the Application show ads?</h2>
-<p><strong>For the first 90 days after installation — no.</strong> During that period no ad requests are sent.</p>
-<p>After 90 days, you may see:</p>
+<p><strong>Yes, from the moment of installation.</strong> Ads never have access to the content of your documents.</p>
+<p>You may see:</p>
 <ul>
 <li>a banner at the bottom of the documents list screen,</li>
 <li>a full-screen ad after closing the fifth document in a row.</li>

@@ -115,8 +115,8 @@ REGON : 387900749</p>
 <li>paramètres de l'utilisateur (thème, nom affiché, qualité de numérisation, date d'installation).</li>
 </ul>
 <p>La base se trouve dans le répertoire privé de l'Application et <strong>n'est jamais envoyée en dehors de l'appareil</strong>. Elle peut être supprimée en effaçant les données de l'Application ou en la désinstallant.</p>
-<h3 id="33-numerisation">3.3 Numérisation des documents (Google ML Kit)</h3>
-<p>La fonction de numérisation utilise la bibliothèque <strong>Google ML Kit Document Scanner</strong>. La détection des bords, le redressement et le traitement d'image s'effectuent <strong>entièrement sur l'appareil</strong> — les images numérisées ne sont envoyées ni aux serveurs de Google ni à aucun autre.</p>
+<h3 id="33-numerisation">3.3 Numérisation des documents (locale, OpenCV)</h3>
+<p>La numérisation repose sur l'appareil photo (Android CameraX) et sur la bibliothèque <strong>OpenCV</strong> intégrée à l'Application. La détection des bords, la correction de perspective et le traitement d'image s'effectuent <strong>entièrement sur l'appareil, sans connexion internet</strong> — les images numérisées ne sont envoyées ni aux serveurs de Google ni à aucun autre. <strong>Google ML Kit</strong> sert uniquement à lire les codes QR et fonctionne également en local.</p>
 <h3 id="34-firebase-analytics">3.4 Firebase Analytics</h3>
 <p>L'Application utilise <strong>Google Firebase Analytics</strong> pour mesurer l'utilisation et améliorer les fonctionnalités. Les événements suivants sont envoyés :</p>
 <table>
@@ -145,7 +145,7 @@ REGON : 387900749</p>
 </tr>
 <tr>
 <td><code>premium_purchased</code></td>
-<td>achat Premium (actuellement inactif)</td>
+<td>achat de l'abonnement PRO</td>
 <td>aucun paramètre supplémentaire</td>
 </tr>
 </tbody>
@@ -166,7 +166,7 @@ REGON : 387900749</p>
 <p>L'Application affiche des publicités fournies par <strong>Google Mobile Ads (AdMob)</strong> :</p>
 <ul>
 <li><strong>Pendant les 90 premiers jours suivant l'installation, les publicités sont entièrement désactivées</strong> — conformément à la configuration de l'Application (<code>AdConfig.freeDaysWithoutAds = 90</code>). Durant cette période, aucune requête publicitaire n'est envoyée.</li>
-<li>Après 90 jours, l'Application peut afficher :
+<li>Dès l'installation, l'Application peut afficher :
 <ul>
 <li>une bannière en bas de l'écran de la liste des documents,</li>
 <li>une publicité plein écran (interstitiel) occasionnelle après la fermeture du cinquième document consécutif.</li>
@@ -206,7 +206,7 @@ REGON : 387900749</p>
 </tr>
 <tr>
 <td><code>INTERNET</code></td>
-<td>Firebase Analytics/Crashlytics ainsi que les publicités AdMob (après 90 jours). L'Application <strong>n'envoie pas les fichiers de l'utilisateur</strong> par internet.</td>
+<td>Firebase Analytics/Crashlytics ainsi que les publicités AdMob (dès l'installation). L'Application <strong>n'envoie pas les fichiers de l'utilisateur</strong> par internet.</td>
 </tr>
 </tbody>
 </table>
